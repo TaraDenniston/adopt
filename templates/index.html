@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Pet Adoption Agency - Home{% endblock %}
+
+{% block content %}
+<h1>Pets</h1>
+<section class="pets horizontal">
+    {% for pet in pets %}
+        <div class="tile vertical">
+            <div class="image horizontal">
+                <img src="{{pet.photo_url}}" alt="image of {{pet.name}} the {{pet.species}}">
+            </div>
+            <div class="description">
+                {{pet.name}} {% if pet.available %}<strong>is available!</strong>{% endif %}
+            </div>
+        </div>
+    {% endfor %}
+</section>
+{% endblock %}
