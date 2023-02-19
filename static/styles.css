@@ -25,6 +25,7 @@ h1 {
 .pets {
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .tile {
@@ -38,7 +39,8 @@ h1 {
 }
 
 .image {
-  background-color: rgb(223, 216, 211);
+  background-color: rgba(223, 216, 211, 0.637);
+  border: 2px solid rgba(209, 193, 182, 0.658);
   border-radius: 1rem;
   height: 17rem;
   width: 17rem;
@@ -53,6 +55,11 @@ h1 {
   overflow: hidden;
 }
 
+label {
+  font-size: 1.5rem;
+  padding: 0.7rem;
+}
+
 input, button {
   font-size: 1.5rem;
   border: 1px solid gray;
@@ -61,9 +68,18 @@ input, button {
 }
 
 button {
-  background-color: rgb(209, 209, 209);
+  background-color: rgb(155, 204, 226);
 }
 
 button:hover {
-  background-color: rgb(170, 170, 170);
+  background-color: rgb(120, 191, 224);
+}
+
+input[type='checkbox'] {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+input[type='text'], input[type='number'] {
+  width: 40rem;
 }

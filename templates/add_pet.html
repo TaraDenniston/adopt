@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Pet Adoption Agency - Home{% endblock %}
+
+{% block content %}
+<h1>Add a New Pet</h1>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {% for field in form if field.widget.input_type != 'hidden' %}
+    <p>
+        {{field.label}}<br>
+        {{field}}
+    </p>
+    {% endfor %}
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
