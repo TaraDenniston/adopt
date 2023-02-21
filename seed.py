@@ -18,8 +18,8 @@ pet2 = Pet(name='Buddy',
            age = '1',
            notes = 'Buddy is sweet, social, confident, and loving. He is already housebroken and does well around children.')
 pet3 = Pet(name='Marley',
-           species = 'ferret',
-           photo_url = 'https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/59757137/2/?bust=1674945527&width=720',
+           species = 'porcupine',
+           photo_url = 'https://images.saymedia-content.com/.image/t_share/MTc0NDM2NjU2NDU4MjQ1NDgw/names-for-pet-hedgehogs-porcupines-and-tenrecs.jpg',
            age = '2',
            notes = 'Marley is energetic and shy but loves to snuggle once comfortable. He would do best in a home without children under 8 years old.')
 
