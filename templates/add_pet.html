@@ -10,8 +10,14 @@
     <p>
         {{field.label}}<br>
         {{field}}
+        {% for err in field.errors %}
+            <br><em class="form-error">{{err}}</em>
+        {% endfor %}
     </p>
     {% endfor %}
     <button type="submit">Submit</button>
 </form>
 {% endblock %}
+
+
+
