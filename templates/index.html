@@ -8,7 +8,9 @@
     {% for pet in pets %}
         <div class="tile vertical">
             <div class="image horizontal">
-                <img src="{{pet.photo_url}}" alt="image of {{pet.name}} the {{pet.species}}">
+                <a href="/{{pet.id}}">
+                    <img src="{{pet.photo_url}}" alt="image of {{pet.name}} the {{pet.species}}">
+                </a>
             </div>
             <div class="description">
                 {{pet.name}} {% if pet.available %}<strong>is available!</strong>{% endif %}
