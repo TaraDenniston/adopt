@@ -26,6 +26,8 @@ def display_home_page():
 def add_pet():
     """Display the form to add a new pet"""
     form = AddPetForm()
+
+    # Create select list choices for species
     species_names = db.session.query(Pet.species)
     spec = [(s, s) for (s,) in species_names]
     form.species.choices = spec
