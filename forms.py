@@ -9,3 +9,8 @@ class AddPetForm(FlaskForm):
     photo_url = StringField('Photo URL', validators=[URL(), Optional()])
     age = IntegerField('Age in Years', validators=[NumberRange(min=0, max=30, message='Please enter a number from 0 to 30')])
     notes = StringField('Add details about personality and temperament')
+
+class EditPetForm(FlaskForm):
+    photo_url = StringField('Photo URL', validators=[URL(), Optional()])
+    notes = StringField('Notes')
+    available = BooleanField('Available for adoption')
