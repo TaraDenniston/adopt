@@ -60,7 +60,7 @@ label {
   padding: 0.7rem;
 }
 
-input, button, select {
+input, button, select, .btn{
   font-size: 1.5rem;
   border: 1px solid gray;
   border-radius: 0.5rem;
@@ -69,10 +69,16 @@ input, button, select {
 
 button {
   background-color: rgb(155, 204, 226);
+  width: 10rem;
+  margin-right: 0.5rem;
 }
 
 button:hover {
   background-color: rgb(120, 191, 224);
+}
+
+.image:hover {
+  background-color: rgba(197, 189, 183, 0.637);
 }
 
 input[type='checkbox'] {
@@ -90,4 +96,33 @@ input[type='text'], input[type='number'] {
 
 .form-error {
   color: red;
+}
+
+#pet-details {
+  margin-bottom: 2rem;
+}
+
+#pet-details img, #pet-details p {
+  max-width: 40rem;
+  max-height: 30rem;
+  display: block;
+  margin: auto;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+section.navigation {
+  width: 41.5rem;
+  margin-top: 3rem;
+  justify-content: start;
+}
+
+.btn {
+  background-color: rgb(179, 179, 179);
+  width: 10rem;
+  margin-right: 0.5rem;
+}
+
+.btn:hover {
+  background-color: rgb(155, 155, 155);
 }
